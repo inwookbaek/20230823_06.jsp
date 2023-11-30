@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- localhost:8080/jsp01_servlet/login?id=홍길동&password=12345&....-->
+	<form action="xxx" method="post">
+		
+		<input type="text" name="id" value="홍길동"/>
+		<input type="text" name="password" value="12345"/><br>
+		
+		<input type="checkbox" name="hobby" value="cook"/>요리
+		<input type="checkbox" name="hobby" value="run"/>달리기
+		<input type="checkbox" name="hobby" value="swim"/>수영
+		<input type="checkbox" name="hobby" value="sleep"/>잠자기<br>
+		
+		<input type="radio" name="major" value="kor"/>국어
+		<input type="radio" name="major" value="eng" checked/>영어
+		<input type="radio" name="major" value="mat"/>수학
+		<input type="radio" name="major" value="kor"/>과학<br>
+		
+		<select name="protocol" id="">
+			<option value="http">http</option>
+			<option value="ftp">ftp</option>
+			<option value="smtp">smtp</option>
+			<option value="pop">pop</option>
+		</select>
+		<br>	
+			
+		<input type="submit" value="로그인"/>
+	</form>
+</body>
+</html>
