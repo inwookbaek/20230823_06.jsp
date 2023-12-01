@@ -9,4 +9,32 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
+  <context-param>
+  	<description>로깅여부</description>
+  	<param-name>logEnabled</param-name>
+  	<param-value>true</param-value>
+  </context-param>
+  
+  <context-param>
+  	<description>사용자ID</description>
+  	<param-name>id</param-name>
+  	<param-value>hong</param-value>
+  </context-param>
+  
+  <context-param>
+  	<description>mariadb connection</description>
+  	<param-name>drv</param-name>
+  	<param-value>org.mlksdfjladkjfasldfkj/.co</param-value>
+  </context-param>
+  
+ 
+  <session-config>
+  	<session-timeout>60</session-timeout>
+  </session-config> 
+  
+  
+  
+  
+  
 </web-app>

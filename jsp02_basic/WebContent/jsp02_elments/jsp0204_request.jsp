@@ -42,7 +42,7 @@
     
     1. getHeader(String name) : 지정한 이름의 헤더의 값 리턴
     2. getHeaders(String name) : 지정한 이름의 헤더목록을 리턴
-    3. getHeaderName() : 모든 헤더의 이름을 리턴
+    3. getHeaderNames() : 모든 헤더의 이름을 리턴
     4. getIntHeader(String name) : 지정한 헤더의 값을 정수값으로 리턴
     5. getDateHeader(String name) : 지정한 헤더의 값을 시간 값으로 리턴
 -->

@@ -53,15 +53,18 @@
 	<%
 		}
 	%>
-		
+	<hr />
+	
+	<b>reguest 헤더정보</b><br>
+	<%
+		Enumeration<String> headers = request.getHeaderNames();
+		while(headers.hasMoreElements()) {
+			String headerName = (String) headers.nextElement();
+			String headerValue = request.getHeader(headerName);
+	%>		
+			<%= headerName %> = <%= headerValue %><br>
+	<%
+		}
+	%>		
 </body>
 </html>
-
-
-
-
-
-
-
-
-
