@@ -9,4 +9,19 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
+  <listener>
+  	<listener-class>com.lec.jdbc.DBCPInitListner</listener-class>
+  </listener>
+  
+  <context-param>
+  	<param-name>poolConfig</param-name>
+	<param-value>
+		jdbcdriver=org.mariadb.jdbc.Driver
+		url=jdbc:mariadb://localhost:3306/guestbook?characterEncoding=utf8
+		usr=root
+		pwd=12345
+		poolName=guestbook
+	</param-value>
+  </context-param>
 </web-app>
