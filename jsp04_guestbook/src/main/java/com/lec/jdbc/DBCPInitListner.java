@@ -36,7 +36,7 @@ public class DBCPInitListner implements ServletContextListener {
 		String driverClass = prop.getProperty("jdbcdriver");
 		try {
 			Class.forName(driverClass);
-			System.out.println(driverClass);
+			// System.out.println(driverClass);
 		} catch (ClassNotFoundException e) {
 			System.out.println("JDBC 드라이버 로딩 실패!!!");
 		}		

@@ -1,5 +1,7 @@
 package com.lec.dto;
 
+import java.sql.Connection;
+
 public class Message {
 
 	private int id;
