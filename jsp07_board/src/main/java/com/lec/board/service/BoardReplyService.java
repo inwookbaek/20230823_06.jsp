@@ -6,24 +6,25 @@ import com.lec.board.dao.BoardDAO;
 import com.lec.board.vo.BoardBean;
 import com.lec.db.JDBCUtility;
 
-public class BoardWriteService {
+public class BoardReplyService {
 
-	public boolean registerBoard(BoardBean board) {
+	public boolean replyBoard(BoardBean board) {
 		
-		boolean isWriteSuccess = false;
+		boolean isReplySuccess = false;
 		
 		Connection conn = JDBCUtility.getConnection();		
 		BoardDAO boardDAO = BoardDAO.getInstance();
 		boardDAO.setConnection(conn);
-		int insertCount = boardDAO.insertBoard(board);
+		int insertCount = boardDAO.insertReplyBoard(board);
 		
 		if(insertCount > 0) {
 			JDBCUtility.commit(conn);
 			JDBCUtility.close(conn, null, null);
-			isWriteSuccess = true;
+			isReplySuccess = true;			
 		} else {
-			JDBCUtility.rollback(conn);			
-		}
-		return isWriteSuccess;
+			JDBCUtility.rollback(conn);	
+		}		
+		return isReplySuccess;
 	}
+
 }

@@ -7,5 +7,5 @@ import com.lec.board.vo.ActionForward;
 
 public interface Action {
 	
-	ActionForward execute(HttpServletRequest req, HttpServletResponse res);
+	public ActionForward execute(HttpServletRequest req, HttpServletResponse res);
 }
